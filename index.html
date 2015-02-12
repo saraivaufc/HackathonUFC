@@ -5,9 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="author" content="Ciano Saraiva <saraiva.ufc@gmail.com>">
 
-		<title>Hackaton UFC</title>
+		<title>HACKATON UFC 2015</title>
 
 		<link rel="shortcut icon" type="image/png" href="static/img/icon.png"/>
 
@@ -37,33 +37,46 @@
 	</head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
+<body>
 	<div class="navbar-wrapper">
-	  <div class="container">
-
-		<div class="navbar navbar-inverse navbar-static-top" role="navigation">
-		  <div class="container">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-			  <a class="navbar-brand" href="#">Hackaton</a>
+		<div class="container">
+			<div class="row">
+			<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+					  <a class="navbar-brand" href="#">Hackaton</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-left">
+							<li class="active">
+								<a href="#">Inicio</a>
+							</li>
+							<li>
+								<a href="#universidade">Local</a>
+							</li>
+							<li>
+								<a href="#patrocinadores">Patrocinadores</a>
+							</li>
+							<li>
+								<a href="#myModal" role="button" data-toggle="modal">Contato</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#contact">Inscrever-se</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 			</div>
-			<div class="navbar-collapse collapse">
-			  <ul class="nav navbar-nav">
-				<li class="active"><a href="#">Inicio</a></li>
-				<li><a href="#universidade">Local</a></li>
-				<li><a href="#patrocinadores">Patrocinadores</a></li>
-				<li><a href="#contact">Contato</a></li>
-			  </ul>
-			</div>
-		  </div>
 		</div>
-
-	  </div>
 	</div>
 
 
@@ -292,6 +305,47 @@
 	  </footer>
 
 	</div><!-- /.container -->
+
+
+	<!-- Modal Contact -->
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel">Gostaríamos muito de ouvir de você</h3>
+	  </div>
+	  <div class="modal-body">
+
+
+		<form class="form-horizontal col-sm-12" action="send_email.php" method="POST">
+		  <div class="form-group">
+			<label>Nome</label>
+			<input class="form-control required" placeholder="Seu nome" name="name" data-placement="top" data-trigger="manual" data-content="Deve ter pelo menos 3 caracteres, e deve conter apenas letras." type="text" required>
+		  </div>
+		  <div class="form-group">
+			<label>Mensagem</label>
+			<textarea class="form-control" placeholder="Sua mensagem aqui..." name="messager" data-placement="top" data-trigger="manual" required></textarea>
+		  </div>
+		  <div class="form-group">
+			<label>E-Mail</label>
+			<input class="form-control email" placeholder="email@service.com (para que possamos entrar em contato com você)" name="email" data-placement="top" data-trigger="manual" data-content="Deve ser um endereço de e-mail válido (usuario@gmail.com)" type="text" required></div>
+		  <div class="form-group">
+		  	<button type="submit" class="btn btn-success pull-right">Enviar!</button>
+		  	<p class="help-block pull-left text-danger hide" id="form-error">&nbsp; O Formulário não é válido. </p>
+		  </div>
+		</form>
+
+
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+	  </div>
+	</div>
+  </div>
+</div>
+
 
 
 	<!-- Bootstrap core JavaScript
