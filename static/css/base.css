@@ -46,9 +46,9 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
+	font-family: "impact";
 	z-index: 10;
 	color: #333333;
-	font-weight: bold;
 }
 
 /* Declare heights because of positioning of img element */
@@ -105,6 +105,13 @@ body {
 
 
 
+.box-text{
+	background: rgba(0, 0, 0, 0.6);
+}
+.box-text h1 + p{
+	color: rgba(255, 255, 255, 1);
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -156,7 +163,3 @@ body {
 	}
 }
 
-
-.carousel-caption p{
-	margin-bottom: 1%;
-}
