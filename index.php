@@ -50,7 +50,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					  </button>
-					  <a class="navbar-brand" href="#">Hackaton</a>
+					  <a class="navbar-brand" href="#">Hackaton UFC</a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-left">
@@ -58,10 +58,13 @@
 								<a href="#">Inicio</a>
 							</li>
 							<li>
-								<a href="#universidade">Local</a>
+								<a href="#local">Local</a>
 							</li>
 							<li>
-								<a href="#patrocinadores">Patrocinadores</a>
+								<a href="#premiacao">Premiação</a>
+							</li>
+							<li>
+								<a href="#apoio">Apoio</a>
 							</li>
 							<li>
 								<a href="#myModal" role="button" data-toggle="modal">Contato</a>
@@ -69,7 +72,7 @@
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li>
-								<a href="#contact">Inscrever-se</a>
+								<a href="#">Inscrever-se</a>
 							</li>
 						</ul>
 					</div>
@@ -105,9 +108,9 @@
 				<div class="container">
 					<div class="carousel-caption">
 						<div class="box-text">
-							<h1>Universidade Federal do Ceará.</h1>
+							<h1>Universidade Federal do Ceará:</h1>
 							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+								A Hackaton UFC 2015 ocorrerá na Universidade Federal do Ceará localizada na cidade de quixadá. O maior centro de Tecnologia da Informação(TI) do sertão central. 
 							</p>
 						</div>
 					</div>
@@ -119,9 +122,9 @@
 				<div class="container">
 					<div class="carousel-caption">
 						<div class="box-text">
-							<h1>Patrocinadores.</h1>
+							<h1>Apoio:</h1>
 							<p>
-								
+								Contamos com apoio do grupo PET Tecnologia da Informação da Universidade Federal do Ceará em conjunto com a empresa Ifactory Solutions.
 							</p>
 						</div>
 					</div>
@@ -217,11 +220,11 @@
 
 		<hr class="featurette-divider">
 
-		<div id="universidade" class="row featurette">
+		<div id="local" class="row featurette">
 			<div class="col-md-7 section">
-				<h2 class="featurette-heading">Universidade.</h2>
-				<p class="lead">
-					O evento ocorrerá no campus da universidade federal do ceará na cidade de quixadá. O campus é um dos 
+				<h2 class="featurette-heading">Local:</h2>
+				<p class="lead text-justify">
+					A Hackaton UFC 2015 ocorrerá na Universidade Federal do Ceará localizada na cidade de quixadá. O campus é um dos 
 					princípais polos tecnologicos da região do sertão central contando com seis cursos da aréa da computação que são:
 					<ul>
 						<li>
@@ -264,32 +267,32 @@
 
 		<hr class="featurette-divider">
 
-		<div class="row featurette">
-			<div class="col-md-5">
-				<h2 class="featurette-heading">Premiação.</h2>
-				<p class="lead">
+		<div id="premiacao" class="row featurette">
+			<div class="col-md-7">
+				<img class="featurette-image img-responsive" src="static/img/premiacao.png" alt="premiação">
+			</div>
+			<div class="col-md-5 section">
+				<h2 class="featurette-heading">Premiação:</h2>
+				<p class="lead text-justify">
 					O Objetivo do Hackaton UFC 2015 é prover ao participante o espirito de trabalho em equipe, mostrando um pouco  da forma
 					como muitasempresas trabalham com seu funcionario, além d promover uma disputa amigavel em busca de bons programadores.
 					Além de tudo isso, será oferrecido R$ 650,00 para a equipe vencedora, como um incentivo para prossegir na sua aplicação.
 				</p>
-			</div>
-			<div class="col-md-7">
-				<img class="featurette-image img-responsive" src="static/img/premiacao.png" alt="premiação">
 			</div>
 		</div>
 
 		<hr class="featurette-divider">
 
 
-		<div id="patrocinadores" class="row featurette">
-			<div class="col-md-7">
-				<img class="featurette-image img-responsive" src="static/img/ifactory-logo.png" alt="Generic placeholder image">
-			</div>
-			<div class="col-md-5">
-				<h2 class="featurette-heading">Patrocinadores.</h2>
-				<p class="lead">
-
+		<div id="apoio" class="row featurette">
+			<div class="col-md-5 section-img">
+				<h2 class="featurette-heading">Apoio:</h2>
+				<p class="lead text-justify">
+					Contamos com apoio do grupo PET Tecnologia da Informação da Universidade Federal do Ceará em conjunto com a empresa Ifactory Solutions.
 				</p>
+			</div>
+			<div class="col-md-7 section">
+				<img class="featurette-image img-responsive" src="static/img/ifactory-logo.png" alt="Generic placeholder image">
 			</div>
 		</div>
 
@@ -312,14 +315,12 @@
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
 	<div class="modal-content">
-	  <div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-		<h3 id="myModalLabel">Gostaríamos muito de ouvir de você</h3>
-	  </div>
 	  <div class="modal-body">
-
+	  	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel">Gostaríamos muito de ouvir de você</h3>
 
 		<form class="form-horizontal col-sm-12" action="send_email.php" method="POST">
+		  <br>
 		  <div class="form-group">
 			<label>Nome</label>
 			<input class="form-control required" placeholder="Seu nome" name="name" data-placement="top" data-trigger="manual" data-content="Deve ter pelo menos 3 caracteres, e deve conter apenas letras." type="text" required>

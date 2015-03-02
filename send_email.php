@@ -10,5 +10,5 @@
 	$headers = 'From: webmaster@example.com' . "\r\n" . 'Reply-To: saraiva.ufc@gmail.com' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
 	mail($to, $subject, $message, $headers);
 
-	header('location: index.html');  
+	header('location: index.php');  
 ?>

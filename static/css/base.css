@@ -1,5 +1,11 @@
 /* My Fonts */
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/roboto.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 
 /* GLOBAL STYLES
@@ -8,7 +14,8 @@
 
 body {
 	padding-bottom: 40px;
-	color: #5a5a5a;
+	color: #000000;
+	font-family: "Roboto-Light" !important;
 }
 
 
@@ -46,7 +53,6 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-	font-family: "impact";
 	z-index: 10;
 	color: #333333;
 }
@@ -163,3 +169,7 @@ body {
 	}
 }
 
+
+p{
+	text-indent: 2em;
+}
