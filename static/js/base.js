@@ -95,3 +95,22 @@ $.fn.goValidate = function() {
 };
 $('form').goValidate();
 
+
+$('form[name="formContato"]').submit( function(){
+    var nomeI = $("input[name=name]").val();
+    var emailI = $("input[name=email]").val();
+    var messageI = $("input[name=message]").val();
+    
+    alert(nomeI + "-" + emailI + "-" + messageI);
+    event.preventDefault();
+    
+    $.ajax({
+        url      : 'http://soofile.hol.es/contato.php',
+        type     : 'POST',
+        data     : { 'name' : nomeI , 'email' : emailI, 'message' : messageI},
+        success  : function( resultado ){
+            alert("Hello");
+            window.location = window.location;
+        }
+    });
+});
