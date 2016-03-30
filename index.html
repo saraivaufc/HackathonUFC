@@ -8,7 +8,7 @@
 		<meta name="author" content="PET-TI  <petccqx@gmail.com>">
 		<meta property="og:image" content="static/img/logo.png"/>
 
-		<title>Hackathon UFC 2015</title>
+		<title>Hackathon UFC 2016</title>
 
 		<link rel="shortcut icon" type="image/png" href="static/img/icon.png"/>
 
@@ -159,7 +159,7 @@
 
 	<h2 class="text-center">
 		<span class="uppercase text-black">
-			12 E 13 DE MAIO DE 2015 -  QUIXADÁ, CEARÁ
+			16 E 17 DE MAIO DE 2016 -  QUIXADÁ, CEARÁ
 		</span>
 	</h2>
 
@@ -182,7 +182,7 @@
 							<div class="col-md-12">
 								<h3 class="text-center">24 horas</h3>
 								<div class="text-center">
-									Desde as 10:00 do dia 12 de maio até as 10h do dia seguinte.
+									Desde as 10:00 do dia 16 de maio até as 10h do dia seguinte.
 								</div>
 								<ul class="ruled-list">
 									<li  class="text-center">
@@ -369,7 +369,7 @@
 			<div class="col-md-6 section-img">
 				<h2 class="">Regras:</h2>
 				<p class="lead text-justify">
-					O problema será disponibilizado às 10:00 do dia 12/05/15 e os participantes terão até às 10:00 do dia 13/05/15(24h) para desenvolver e submeter um protótipo da solução.
+					O problema será disponibilizado às 10:00 do dia 16/05/2016 e os participantes terão até às 10:00 do dia 17/05/2016(24h) para desenvolver e submeter um protótipo da solução.
 				</p>
 				<p class="lead text-justify">
 					Poderão ser utilizadas quaisquer ferramentas para se desenvolver o protótipo. Constatado qualquer tipo de plágio por iniciativa de qualquer equipe, a mesma será eliminada.	
@@ -439,39 +439,40 @@
 	  	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 		<h3 id="">Gostaríamos muito de ouvir você...</h3>
 
-		<!-- <form class="form-horizontal" name="formContato">
-	          <fieldset>
-	            
-	            <div class="form-group">
-	              <label class="col-md-3 control-label" for="name">Nome</label>
-	              <div class="col-md-9">
-	                <input id="name" name="name" placeholder="nome" class="form-control" required="" type="text">
-	              </div>
-	            </div>
-	    
-	            <div class="form-group">
-	              <label class="col-md-3 control-label" for="email">E-mail</label>
-	              <div class="col-md-9">
-	                <input id="email" name="email" placeholder="e-mail" class="form-control" required="" type="text">
-	              </div>
-	            </div>
-	    
-	            <div class="form-group">
-	              <label class="col-md-3 control-label" style="resize:none;" for="message">Mensagem</label>
-	              <div class="col-md-9">
-	                <textarea class="form-control" id="message" name="message" placeholder="mensagem" rows="5" required=""></textarea>
-	              </div>
-	            </div>
-	    
-	            <div class="form-group">
-	              <div class="col-md-12 text-right">
-	                <button type="submit" class="btn btn-primary">enviar</button>
-	              </div>
-	            </div>
-	          </fieldset>
-	          </form> -->
-	          <br>
-	          <div class="row">
+		<form class="form-horizontal" name="formContato" action="send_email.php" method="POST">
+          <fieldset>
+            <div class="container-fluid">
+            <div class="form-group">
+              <label class="control-label" for="name">Nome *:</label>
+              <div class="">
+                <input id="name" name="name" placeholder="Renato da Silva" class="form-control" required="" type="text">
+              </div>
+            </div>
+    
+            <div class="form-group">
+              <label class="control-label" for="email">E-mail *:</label>
+              <div>
+                <input id="email" name="email" placeholder="renato_silva@email.com" class="form-control" required="" type="text">
+              </div>
+            </div>
+    
+            <div class="form-group">
+              <label class="control-label" style="resize:none;" for="message">Mensagem *:</label>
+              <div>
+                <textarea class="form-control" id="message" name="message" placeholder="Oi pessoal, quero tirar uma dúvida com vocês!" rows="5" required=""></textarea>
+              </div>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary pull-right">
+                	<i class="glyphicon glyphicon-send"></i> Enviar
+                </button>
+            </div>
+            </div>
+          </fieldset>
+          </form>
+          <br>
+	          <!-- <div class="row">
 	          		<div class="col-md-2">
 	          			<img class="img-responsive" src="static/img/gmail.png" height="15px">	
 	          		</div>
@@ -487,7 +488,7 @@
 	          			<h3><a href="https://www.facebook.com/pettiqx">https://www.facebook.com/pettiqx</a>
 	          			</h3>
 	          		</div>
-	          </div>
+	          </div> -->
 </p></h4>
 	  </div>
 	</div>

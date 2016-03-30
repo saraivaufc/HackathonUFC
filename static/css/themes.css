@@ -306,55 +306,6 @@ a:hover {
   text-decoration: none;
 }
 
-.btn {
-  min-width: 180px;
-  border-radius: 25px;
-  background: #0072bc;
-  text-align: center;
-  padding: 13px 0px 14px 0px;
-  color: #fff;
-  font-size: 15px;
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  font-weight: 600;
-  line-height: 1;
-}
-.btn:hover {
-  color: #fff;
-  background: #0063a3;
-}
-.btn-hollow {
-  background: none;
-  border: 2px solid #0072bc;
-  color: #0072bc;
-}
-.btn-hollow:hover {
-  background: #0072bc;
-}
-.btn-white {
-  background: #fff;
-  color: #0072bc;
-}
-.btn-white:hover {
-  background: #fff;
-  color: #005389;
-}
-.btn-hollow.btn-white {
-  background: none;
-  border-color: #fff;
-  color: #fff;
-}
-.btn-hollow.btn-white:hover {
-  background: #fff;
-  color: #0072bc;
-}
-.btn-lg {
-  padding: 20px 0px 21px 0px;
-  text-transform: uppercase;
-  min-width: 230px;
-  border-radius: 35px;
-}
 /*!
 // Backgrounds & Parallax
 // --------------------------------------------------*/
