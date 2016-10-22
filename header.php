@@ -14,7 +14,7 @@
 		<meta property="og:site_name" content="II Hackathon de Inovação Tecnologica do Sertão Central">
 		<meta property="og:description" content="A II Hackathon de Inovação Tecnologica do Sertão Central é um desafio que propõe a criação de uma solução tecnológica (aplicativo), durante 24 horas de programação, criatividade, design e competitividade! O objetivo é fomentar o conhecimento tecnológico e o espírito de competidor daqueles que ousam ser desafiados.">
 
-		<meta property="og:image" content="www.askmath.quixada.ufc.br/static/img/banner.jpg"/>
+		<meta property="og:image" content="http://www.askmath.quixada.ufc.br/static/img/banner.jpg"/>
 		<meta property="og:image:type" content="image/jpeg">
 		<meta property="og:image:width" content="3333">
 		<meta property="og:image:height" content="1250">
