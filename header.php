@@ -17,7 +17,7 @@
 		<meta property="og:image" content="http://www.hackathon.quixada.ufc.br/static/img/banner.jpg"/>
 		<meta property="og:image:type" content="image/jpeg">
 		<meta property="og:image:width" content="1200">
-		<meta property="og:image:height" content="587">
+		<meta property="og:image:height" content="800">
 
 		<title>II Hackathon de Inovação Tecnologica do Sertão Central</title>
 
