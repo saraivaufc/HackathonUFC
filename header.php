@@ -4,9 +4,20 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="A II Hackathon de Inovação Tecnologica do Sertão Central é um desafio que propõe a criação de uma solução tecnológica (aplicativo), que utilize dados abertos, durante 24 horas de programação, criatividade, design e competitividade! O objetivo é fomentar o conhecimento tecnológico e o espírito de competidor daqueles que ousam ser desafiados.">
+		<meta name="description" content="A II Hackathon de Inovação Tecnologica do Sertão Central é um desafio que propõe a criação de uma solução tecnológica (aplicativo), durante 24 horas de programação, criatividade, design e competitividade! O objetivo é fomentar o conhecimento tecnológico e o espírito de competidor daqueles que ousam ser desafiados.">
 		<meta name="author" content="PET-TI  <petccqx@gmail.com>">
-		<meta property="og:image" content="static/img/logo.png"/>
+
+		<!-- Tags Facebook-->
+		<meta property="og:locale" content="pt_BR">
+		<meta property="og:url" content="http://www.hackathon.quixada.ufc.br">
+		<meta property="og:title" content="Início">
+		<meta property="og:site_name" content="II Hackathon de Inovação Tecnologica do Sertão Central">
+		<meta property="og:description" content="A II Hackathon de Inovação Tecnologica do Sertão Central é um desafio que propõe a criação de uma solução tecnológica (aplicativo), durante 24 horas de programação, criatividade, design e competitividade! O objetivo é fomentar o conhecimento tecnológico e o espírito de competidor daqueles que ousam ser desafiados.">
+
+		<meta property="og:image" content="static/img/banner.jpg"/>
+		<meta property="og:image:type" content="image/jpeg">
+		<meta property="og:image:width" content="800">
+		<meta property="og:image:height" content="600">
 
 		<title>II Hackathon de Inovação Tecnologica do Sertão Central</title>
 
