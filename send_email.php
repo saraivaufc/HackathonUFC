@@ -26,13 +26,15 @@
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-	$send_email = NULL;
 	if( mail($to, $subject, $message_html, $headers) ){
-		$send_email = TRUE;
+		$mensagem = "Sua mensagem foi enviada com sucesso!";
+		$tipo = "success";
+
 	}else{
-		$send_email = FALSE;
+		$mensagem = "Ocorreu um erro ao enviar sua mensagem. Por favor, tente mais tarde.";
+		$tipo = "error";
 	};
-
-	header('Location: index.php?send_email='. ($send_email ? 'TRUE' : 'FALSE') );
-
+	$data = array("mensagem" => $mensagem, "tipo" => $tipo);
+	header('Content-Type: application/json');
+	echo json_encode($data);
 ?>

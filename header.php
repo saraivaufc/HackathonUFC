@@ -10,7 +10,7 @@
 
 		<title>II Hackathon de Inovação Tecnologica do Sertão Central</title>
 
-		<link rel="shortcut icon" type="image/png" href="static/img/icon.png"/>
+		<link rel="shortcut icon" type="image/png" href="static/img/icon.jpg"/>
 
 
 		<!-- Bootstrap core CSS -->

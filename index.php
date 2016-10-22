@@ -1,8 +1,9 @@
 <?php include('header.php'); ?>
-<?php include('navbar.php'); ?>
-	<!-- Carousel
-	================================================== -->
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="site">
+	<?php include('navbar.php'); ?>
+
+	<!-- Carousel ================================================== -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -10,18 +11,18 @@
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 		</ol>
 
-		<div class="carousel-inner">
+		<div class="carousel-inner" role="listbox">
 
 			<div class="item active">
-				<img src="static/img/logo.png" alt="First slide">
+				<img src="static/img/logo.jpg" alt="Logo da Hackathon">
 				<div class="container">
 					<div class="carousel-caption">
 					</div>
 				</div>
 			</div>
 
-			<div class="item">
-				<img src="static/img/ufc.jpg" alt="Second slide">
+			<div class="item" >
+				<img src="static/img/ufc.jpg" alt="Imagem da Universidade Federal do Ceará">
 				<div class="container">
 					<div class="carousel-caption">
 						<div class="box-text">
@@ -35,7 +36,7 @@
 			</div>
 
 			<div class="item">
-				<img src="static/img/grupo-pet.jpg" alt="Third slide">
+				<img src="static/img/grupo-pet.jpg" alt="Imagem do Grupo PET Tecnologia da Informação">
 				<div class="container">
 					<div class="carousel-caption">
 						<div class="box-text">
@@ -53,39 +54,23 @@
 		<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 
 	</div><!-- /.carousel -->
-	<?php
-		$send_email = $_GET['send_email'];
-		if($send_email == 'TRUE'){
-			?>
-				<div class="alert alert-success">
-					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-					<strong>Sucesso!</strong> Sua mensagem foi enviada!. :)
-				</div>
-			<?php
-		}else if($send_email == 'FALSE'){
-			?>
-				<div class="alert alert-danger">
-					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-					<strong>Erro!</strong> Sua mensagem não pode ser enviada!, tente novamente mais tarde. :(
-				</div>
-			<?php
-		}
-	?>
 
-	<h2 class="text-center">
-		<span class="uppercase text-black">
-			24 E 25 DE NOVEMBRO DE 2016 -  QUIXADÁ, CEARÁ
-		</span>
-	</h2>
+		<h2 class="text-center">
+			<span class="text-black">
+				Início <b>24</b> de <b>Nov</b> . às <b>10h</b> até <b>25</b> de <b>Nov</b>. às <b>10h</b>
+			</span>
+		</h2>
 
+		<div class="text-center">
+			<a href="inscricao.php" class="btn btn-primary btn-lg">Realizar Inscrição</a>
+		</div>
 
-	<!-- Marketing messaging and featurettes
-	================================================== -->
-	<!-- Wrap the rest of the page in another container to center all the content. -->
-
-	<div class="container-fluid">
+		<!-- Marketing messaging and featurettes
+		================================================== -->
+		<!-- Wrap the rest of the page in another container to center all the content. -->
 		<!-- START THE FEATURETTES -->
 		<div id="numeros" class="row featurette">
+
 		<section class="topics duplicatable-content">
 			<div class="container">
 				<div class="row">
@@ -95,13 +80,12 @@
 								<img src="static/img/tempo.png">
 							</div>
 							<div class="col-md-12">
-								<h3 class="text-center">24 horas</h3>
 								<div class="text-center">
 									Desde as 10:00 do dia 24 de novembro até as 10h do dia seguinte.
 								</div>
 								<ul class="ruled-list">
 									<li  class="text-center">
-										Critérios avaliados: Aderência ao Tema | Originalidade | Inovação | Utilidade | Usabilidade
+										Critérios avaliados: Aderência ao Tema, Originalidade, Inovação, Utilidade e Usabilidade
 									</li>
 								</ul>
 							</div>
@@ -114,7 +98,6 @@
 								<img src="static/img/equipe.png">
 							</div>
 							<div class="col-md-12">
-								<h3 class="text-center">10 equipes</h3>
 								<div  class="text-center">
 									Equipes com até 4 participantes cada, totalizando no máximo 40 players.
 								</div>
@@ -133,7 +116,6 @@
 								<img src="static/img/taca.png">
 							</div>
 							<div class="col-md-12">
-								<h3 class="text-center">1 campeão!</h3>
 								<div  class="text-center">
 									No dia seguinte ao evento elegeremos e premiaremos a equipe campeã.
 								</div>
@@ -149,12 +131,13 @@
 			</div>
 		</section>
 		</div>
+
 		<div id="oevento" class="row featurette">
 			<div class="container-fluid">
-				<div class="col-md-6 section-img">
+				<div class="col-md-3 section-img">
 					<img class="featurette-image img-responsive" src="static/img/other-hackathon.png" alt="premiação">
 				</div>
-				<div class="col-md-6 section">
+				<div class="col-md-9 section">
 					<h2 class="">A Hackathon:</h2>
 					<p class="lead text-justify">
 						É um período em tempo corrido (uma maratona) na busca de solucionar um desafio usando tecnologia. São bem vindos: programadores, desenvolvedores e inventores em geral, para desenvolver protótipos de soluções em uma competição amigável e que favorece a troca de experiências e de contatos profissionais.
@@ -165,16 +148,18 @@
 						programadores, designers e quem mais se interessar se juntam e ficam em imersão,
 						numa troca interdisciplinar, para pensar e dar ao menos um start numa ideia.
 					</p>
+					<!--
 					<p class="lead text-justify">
 						Tema dessa edição será: "Visualização de Informação para Melhorar a Vida nas Cidades".
 					</p>
+					-->
 				</div>
 			</div>
 		</div>
 
 		<div id="programacao" class="row featurette">
 			<div class="col-md-6 section">
-				<h2 class="">Programação:</h2>
+				<h2>Programação:</h2>
 				<p class="lead text-justify">
 					Inciaremos o dia com uma palestra sobre o formato do evento onde haverá chance para tirar dúvidas. Em seguida, enunciaremos o problema desta edição sobre "Visualização de informação para melhorar a vida nas cidades" e liberaremos as equipes para o trabalho! Serão 24 horas de programação, criatividade, design e competitividade! O objetivo é incentivar a inovação e o espírito empreendedor dos competidores
 				</p>
@@ -194,8 +179,7 @@
 						</div>
 					</li>
 
-
-										<li>
+					<li>
 						<div class="schedule-title">
 							<span class="time">10:30 do 1º dia</span>
 							<span class="title">Divulgação do Problema e início da codificação</span>
@@ -220,8 +204,7 @@
 							<div class="bottom"></div>
 						</div>
 					</li>
-
-										<li>
+					<li>
 						<div class="schedule-title">
 							<span class="time">16:00 do 2º dia</span>
 							<span class="title">Demos (apresentação de 10 minutos)</span>
@@ -234,7 +217,7 @@
 						</div>
 					</li>
 
-										<li>
+					<li>
 						<div class="schedule-title">
 							<span class="time">17:30 do 2º dia</span>
 							<span class="title">Os vencedores são anunciados!</span>
@@ -257,31 +240,34 @@
 			</div>
 
 			<div class="col-md-6 section">
-				<h2 class="">Local:</h2>
+				<h2>Local:</h2>
 				<p class="lead text-justify">
-					Nosso evento ocorrerá no Campus de Quixadá da Universidade Federal do Ceará, que fica na Av. José de Freitas Queiroz, 5003 - Cedro Novo. Trata-se de um dos princípais polos tecnológicos da região do sertão central, contando com seis cursos da aréa da Tecnologia da Informação. Venha desenvolver suas habilidades!
+					O evento ocorrerá no Campus de Quixadá da Universidade Federal do Ceará, que fica na Av. José de Freitas Queiroz, 5003 - Cedro Novo. Trata-se de um dos princípais polos tecnológicos da região do sertão central, contando com seis cursos da aréa da Tecnologia da Informação. Venha desenvolver suas habilidades!
 				</p>
 			</div>
 		</div>
 		<div id="premiacao" class="row featurette">
-			<div class="col-md-6 section">
-				<h2 class="">Premiação:</h2>
+			<div class="col-md-9 section">
+				<h2>Premiação:</h2>
 				<p class="lead text-justify">
 					O objetivo da II Hackathon de Inovação Tecnologica do Sertão Central  é prover ao participante o espírito de trabalho em equipe, mostrando um pouco da forma
 					como empresas trabalham , além de promover uma disputa amigável em busca de bons programadores.
 					Além de tudo isso, será oferrecido um prêmio em dinheiro para a equipe vencedora, como um incentivo para prossegir na sua aplicação.
 				</p>
 			</div>
-			<div class="col-md-6 section-img">
-				<img class="featurette-image img-responsive" src="static/img/premiacao.png" alt="premiação">
+			<div class="col-md-3 section-img">
+				<img class="featurette-image img-responsive" src="static/img/taca.png" alt="premiação">
 			</div>
 		</div>
 		<div id="regras" class="row featurette">
 			<div class="col-md-6 section">
-				<img id="homer" class="featurette-image img-responsive" src="static/img/regras.png" alt="Generic placeholder image">
+				<div class="image-inline">
+					<img class="featurette-image inline img-responsive" src="static/img/equipe.png" width="45%" alt="Generic placeholder image">
+					<img class="featurette-image inline img-responsive" src="static/img/tempo.png" width="45%" alt="Generic placeholder image">
+				</div>
 			</div>
 			<div class="col-md-6 section-img">
-				<h2 class="">Regras:</h2>
+				<h2>Regras:</h2>
 				<p class="lead text-justify">
 					O problema será disponibilizado às 10:00 do dia 24/11/2016 e os participantes terão até às 10:00 do dia seguinte para desenvolver e submeter um protótipo da solução.
 				</p>
@@ -293,34 +279,28 @@
 				</p>
 			</div>
 		</div>
-		<div id="realizacao" class="row featurette">
-			<div class="col-md-4 section-img">
-				<h2 class="featurette-heading">Realização:</h2>
-			</div>
-			<div class="col-md-8 section">
-				<center>
-					<img class="featurette-image img-responsive" src="static/img/logo-pet-ti.png" alt="Generic placeholder image">
-				</center>
-			</div>
-		</div>
-		<div id="apoio" class="row featurette">
-			<div class="col-md-4 section-img">
-				<h2 class="featurette-heading">Apoio:</h2>
-			</div>
-			<div class="col-md-8 section">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-6">
-							<img class="featurette-image img-responsive" src="static/img/logo-ufc-quixada.png" alt="UFC Quixadá">
-						</div>
-						<div class='col-md-6'>
-							<img class="featurette-image img-responsive" src="static/img/logo-ufc.png" alt="PET SI">
-						</div>
+		<div class="row featurette">
+			<div class="col-md-6 section-img">
+				<div class="content-face">
+					<div id="face" fb-iframe-plugin-query="app_id=114545895322903&amp;container_width=588&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHackathon-UFC%2F940408862659729%3Ffref%3Dts&amp;locale=pt_BR&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=500" fb-xfbml-state="rendered" class="fb-like fb_iframe_widget" data-share="true" data-show-faces="true" data-width="500" data-href="https://www.facebook.com/pages/Hackathon-UFC/940408862659729?fref=ts">
+						<span style="vertical-align: bottom; width: 500px; height: 57px;">
+							<iframe class="" src="https://www.facebook.com/v2.3/plugins/like.php?app_id=114545895322903&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FKTWTb9MY5lw.js%3Fversion%3D41%23cb%3Df2cce899c3f6514%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff3459fd9ca81f6%26relation%3Dparent.parent&amp;container_width=588&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHackathon-UFC%2F940408862659729%3Ffref%3Dts&amp;locale=pt_BR&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=500" style="border: medium none; visibility: visible; width: 500px; height: 57px;" title="fb:like Facebook Social Plugin" scrolling="no" allowfullscreen="true" allowtransparency="true" name="f175ee4d38f89fa" frameborder="0" height="1000px" width="500px">
+							</iframe>
+						</span>
 					</div>
+				</div>
+			</div>
+			<div class="col-md-6 section">
+				<h2>Realização:</h2>
+				<div class="image-inline">
+					<img class="featurette-image inline img-responsive" src="static/img/logo-pet-ti.png" width="30%" alt="Generic placeholder image">
+					<img class="featurette-image inline img-responsive" src="static/img/logo-ufc-quixada.png" width="30%" alt="UFC Quixadá">
+					<img class="featurette-image inline img-responsive" src="static/img/logo-ufc.png" width="30%" alt="PET SI">
 				</div>
 			</div>
 		</div>
 		<hr class="divider">
 		<!-- /END THE FEATURETTES -->
 
-<?php include('footer.php'); ?>
+	<?php include('footer.php'); ?>
+</div>
