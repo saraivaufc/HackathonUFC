@@ -16,8 +16,8 @@
 
 		<meta property="og:image" content="www.askmath.quixada.ufc.br/static/img/banner.jpg"/>
 		<meta property="og:image:type" content="image/jpeg">
-		<meta property="og:image:width" content="800">
-		<meta property="og:image:height" content="600">
+		<meta property="og:image:width" content="3333">
+		<meta property="og:image:height" content="1250">
 
 		<title>II Hackathon de Inovação Tecnologica do Sertão Central</title>
 
